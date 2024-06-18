@@ -60,7 +60,7 @@ O sketch Arduino realiza as seguintes operações:
 
 ## Contribuições
 
-agradecemos ao professor Cabrine por  nos ajudar no nosso projeto de edge de formula E
+Agradecemos ao professor Fabio Cabrini por ajudar no nosso projeto de Edge do Challenge da Mahindra E da FIAP.
 
 ## Autor
 
@@ -72,8 +72,6 @@ agradecemos ao professor Cabrine por  nos ajudar no nosso projeto de edge de for
     Otavio Santos de Lima Ferrao - RM 556452
     Gabriel Guilherme Leste - RM 558638
 ## Link da Simulação
-link da simulação
-https://wokwi.com/projects/400968504768250881
-link do video do youtube
-https://youtu.be/MnBeaJHwtrQ?si=0EdBtbGQB5J8nsiH
+Link da simulação: https://wokwi.com/projects/400968504768250881
+Link do vídeo explicativo no YouTube: https://youtu.be/MnBeaJHwtrQ?si=0EdBtbGQB5J8nsiH
 
