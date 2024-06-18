@@ -1,55 +1,79 @@
 # readme
-projeto do arduino
-Arduino Ultrasonic Distance Sensor with LED Control
-Este projeto utiliza um Arduino para medir distâncias com um sensor ultrassônico e controlar LEDs para indicar diferentes faixas de distância.
+# Controle de LEDs com Sensor Ultrassônico no Arduino
 
-Componentes Necessários
-Arduino (qualquer modelo)
-Sensor Ultrassônico HC-SR04
-LEDs (Verde, Amarelo, Vermelho)
-Resistores (se necessário para limitação de corrente dos LEDs)
-Breadboard e cabos jumper
-Instalação
-Montagem do Hardware:
+## Visão Geral
 
-Conecte o sensor ultrassônico HC-SR04 ao Arduino conforme a seguinte pinagem:
-VCC do sensor ao 5V do Arduino
-GND do sensor ao GND do Arduino
-Trig do sensor ao pino digital 9 do Arduino
-Echo do sensor ao pino digital 10 do Arduino
-Conecte os LEDs aos pinos do Arduino conforme definido no código.
-Configuração do Software:
+Este projeto utiliza um Arduino para medir distâncias utilizando um sensor ultrassônico (HC-SR04) e controlar LEDs para indicar diferentes faixas de distância.
 
-Abra o arquivo ultrasonic_led_control.ino no Arduino IDE.
-Carregue o código para o Arduino.
-Execução:
+## Componentes Necessários
 
-Abra o Monitor Serial do Arduino IDE (baud rate 9600) para visualizar as leituras de distância.
-Funcionamento
+- Placa Arduino (qualquer modelo)
+- Sensor Ultrassônico HC-SR04
+- LEDs (Verde, Amarelo, Vermelho)
+- Resistores (se necessário para limitação de corrente dos LEDs)
+- Protoboard e cabos jumper
+
+## Instalação
+
+### Configuração do Hardware
+
+1. **Conexão dos componentes:**
+   - Conecte o sensor HC-SR04 ao Arduino conforme abaixo:
+     - **VCC do sensor** ao **5V do Arduino**
+     - **GND do sensor** ao **GND do Arduino**
+     - **Pino Trig do sensor** ao **pino digital 9 do Arduino**
+     - **Pino Echo do sensor** ao **pino digital 10 do Arduino**
+   - Conecte os LEDs aos pinos do Arduino conforme definido no código.
+
+### Configuração do Software
+
+2. **Preparação do Arduino IDE:**
+   - Abra o arquivo `ultrasonic_led_control.ino` no Arduino IDE.
+   - Carregue o código para a placa Arduino.
+
+3. **Execução:**
+   - Abra o Monitor Serial do Arduino (baud rate 9600) para visualizar as leituras de distância.
+
+## Funcionamento
+
 O sketch Arduino realiza as seguintes operações:
 
-Inicialização:
+- **Inicialização:**
+  - Configura os pinos do Arduino para o sensor ultrassônico (trigger e echo) e para os LEDs (verde, amarelo, vermelho).
+  - Inicia a comunicação serial para monitoramento.
 
-Configura os pinos do Arduino para o sensor ultrassônico (trigger e echo) e para os LEDs (verde, amarelo, vermelho).
-Inicia a comunicação serial para monitoramento.
-Loop Principal:
+- **Loop Principal:**
+  - Gera um pulso ultrassônico para o sensor e mede a duração do eco.
+  - Calcula a distância com base na duração do eco.
+  - Controla os LEDs com base na distância medida:
+    - Verde para distância segura (> 20 cm).
+    - Amarelo para distância intermediária (10 cm a 20 cm).
+    - Vermelho para distância perigosa (<= 10 cm).
 
-Gera um pulso ultrassônico para o sensor e mede a duração do eco.
-Calcula a distância com base na duração do eco.
-Controla os LEDs com base na distância medida:
-Verde para distância segura (> 20 cm).
-Amarelo para distância intermediária (10 cm a 20 cm).
-Vermelho para distância perigosa (<= 10 cm).
-Monitoramento:
+- **Monitoramento:**
+  - As leituras de distância são exibidas no Monitor Serial para depuração e monitoramento.
 
-As leituras de distância são exibidas no Monitor Serial para debug e monitoramento.
-Notas
-Certifique-se de ajustar os pinos de acordo com a sua montagem física, se necessário.
-O código pode ser modificado para ajustar os limiares de distância ou adicionar funcionalidades adicionais conforme necessário.
-Contribuições
-Contribuições gostariamos de agradecer o professor cabrine por nos ajudar no projeto da equipe Ares.
+## Observações
 
-Autor
-Nomes - Gabriel Guilherme Leste
-Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+- Certifique-se de ajustar a configuração dos pinos de acordo com o seu setup físico, se necessário.
+- O código pode ser modificado para ajustar os limiares de distância ou adicionar funcionalidades adicionais conforme necessário.
+
+## Contribuições
+
+agradecemos ao professor Cabrine por  nos ajudar no nosso projeto de edge de formula E
+
+## Autor
+
+-Membros do Grupo
+
+    Glauco Heitor Gonçalves e Silva - RM 555978
+    Lucas Himeno do Carmo - RM 555069
+    Victor Hugo de Paula - RM 554787
+    Otavio Santos de Lima Ferrao - RM 556452
+    Gabriel Guilherme Leste - RM 558638
+## Link da Simulação
+link da simulação
+https://wokwi.com/projects/400968504768250881
+link do video do youtube
+https://youtu.be/MnBeaJHwtrQ?si=0EdBtbGQB5J8nsiH
+
