@@ -72,6 +72,6 @@ Agradecemos ao professor Fabio Cabrini por ajudar no nosso projeto de Edge do Ch
     Otavio Santos de Lima Ferrao - RM 556452
     Gabriel Guilherme Leste - RM 558638
 ## Link da Simulação
-Link da simulação: https://wokwi.com/projects/400968504768250881
+Link da simulação: [https://wokwi.com/projects/400968504768250881](https://wokwi.com/projects/400993239398859777)
 Link do vídeo explicativo no YouTube: https://youtu.be/MnBeaJHwtrQ?si=0EdBtbGQB5J8nsiH
 
